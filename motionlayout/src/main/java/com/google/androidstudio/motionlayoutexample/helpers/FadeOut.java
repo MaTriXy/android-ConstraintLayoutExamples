@@ -14,30 +14,29 @@
  * limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.google.androidstudio.motionlayoutexample.helpers;
 
-buildscript {
-    ext.kotlin_version = '1.2.41'
-    repositories {
-        google()
-        jcenter()
+import android.content.Context;
+import android.support.constraint.motion.MotionHelper;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class FadeOut extends MotionHelper {
+
+    public FadeOut(Context context) {
+        super(context);
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-beta01'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+    public FadeOut(Context context, AttributeSet attrs) {
+        super(context, attrs);
     }
-}
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
+    public FadeOut(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
-}
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    @Override
+    public void setProgress(View view, float progress) {
+        view.setAlpha(1f - progress);
+    }
 }
