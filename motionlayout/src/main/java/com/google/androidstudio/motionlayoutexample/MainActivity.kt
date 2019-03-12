@@ -1,8 +1,8 @@
 package com.google.androidstudio.motionlayoutexample
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.CompoundButton
@@ -10,6 +10,7 @@ import com.google.androidstudio.motionlayoutexample.fragmentsdemo.FragmentExampl
 import com.google.androidstudio.motionlayoutexample.fragmentsdemo.FragmentExampleActivity
 import com.google.androidstudio.motionlayoutexample.viewpagerdemo.ViewPagerActivity
 import com.google.androidstudio.motionlayoutexample.viewpagerdemo.ViewPagerActivity2
+import com.google.androidstudio.motionlayoutexample.youtubedemo.YouTubeDemoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener {
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
     private lateinit var viewManager: RecyclerView.LayoutManager
     private var doShowPaths = false
 
-    private val myDataset: Array<DemosAdapter.Demo> = arrayOf(
+    private val dataset: Array<DemosAdapter.Demo> = arrayOf(
             DemosAdapter.Demo("Basic Example (1/2)", "Basic motion example using referenced ConstraintLayout files", R.layout.motion_01_basic),
             DemosAdapter.Demo("Basic Example (2/2)", "Basic motion example using ConstraintSets defined in the MotionScene file", R.layout.motion_02_basic),
             DemosAdapter.Demo("Custom Attribute", "Show color interpolation (custom attribute)", R.layout.motion_03_custom_attribute),
@@ -41,15 +42,17 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
             DemosAdapter.Demo("Complex Motion Example (3/4)", "Advanced CoordinatorLayout-like behavior (adding a FAB). Implemented with MotionLayout only, using direct resizing of the view.", R.layout.motion_19_coordination),
             DemosAdapter.Demo("Complex Motion Example (4/4)", "Advanced Synchronized reval motion + helper (bounce). Implemented with MotionLayout only.", R.layout.motion_20_reveal),
             DemosAdapter.Demo("Fragment Transition Example (1/2)", "Example showing transitioning fragments within MotionLayout", FragmentExampleActivity::class.java),
-            DemosAdapter.Demo("Fragment Transition Example (2/2)", "Example showing transitioning fragments within MotionLayout", FragmentExample2Activity::class.java)
+            DemosAdapter.Demo("Fragment Transition Example (2/2)", "Example showing transitioning fragments within MotionLayout", FragmentExample2Activity::class.java),
+            DemosAdapter.Demo("YouTube like motion Example", "Example showing a transition like YouTube", YouTubeDemoActivity::class.java),
+            DemosAdapter.Demo("Example using KeyTrigger", "Example that calls a method using KeyTrigger", R.layout.motion_25_keytrigger),
+            DemosAdapter.Demo("Example using Multi State", "Example that transitions between multiple states", R.layout.motion_26_multistate)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         viewManager = LinearLayoutManager(this)
-        viewAdapter = DemosAdapter(myDataset)
-
+        viewAdapter = DemosAdapter(dataset)
         recyclerView = findViewById<RecyclerView>(R.id.recyclerview).apply {
             setHasFixedSize(true)
             layoutManager = viewManager
