@@ -7,7 +7,7 @@ This repository contains a list of layouts that showcases the various features a
 Pre-requisites
 --------------
 - Android Studio 3.3+
-- Constaint Layout library 2.0.0-alpha3+
+- Constraint Layout library 2.0.0-alpha5+
 
 Getting Started
 ---------------
@@ -20,8 +20,9 @@ MotionLayout samples overview
 
 |  Title  |  GIF  | Layout | MotionScene | 
 | :----: | :----: | :----: | :----: |
-|  Basic Example (1/2) | <img src="https://user-images.githubusercontent.com/796361/53616329-6ce64e80-3c25-11e9-8fe1-a4d60bf25584.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_01_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_01.xml) | 
-|  Basic Example (2/2) | <img src="https://user-images.githubusercontent.com/796361/53616351-84bdd280-3c25-11e9-83ce-b933e276d08e.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_02_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_02.xml) | 
+|  Basic Example (1/3) | <img src="https://user-images.githubusercontent.com/796361/53616329-6ce64e80-3c25-11e9-8fe1-a4d60bf25584.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_01_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_01.xml) | 
+|  Basic Example (2/3) | <img src="https://user-images.githubusercontent.com/796361/53616351-84bdd280-3c25-11e9-83ce-b933e276d08e.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_02_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_02.xml) | 
+|  Basic Example (3/3) | <img src="https://user-images.githubusercontent.com/796361/57440055-4296ba00-7282-11e9-8209-981ba020cda1.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_02_basic_autocomplete_false.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_02_autocomplete_false.xml) | 
 |  Custom Attribute | <img src="https://user-images.githubusercontent.com/796361/53616369-91dac180-3c25-11e9-9245-7ab48fc94334.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_03_custom_attribute.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_03.xml) | 
 |  ImageFilterView (1/2) | <img src="https://user-images.githubusercontent.com/796361/53616380-9c955680-3c25-11e9-801e-d6d2bbf140a3.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_04_imagefilter.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_04.xml) | 
 |  ImageFilterView (2/2) | <img src="https://user-images.githubusercontent.com/796361/53616396-a6b75500-3c25-11e9-985f-8c800b1bb174.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_05_imagefilter.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_05.xml) | 
@@ -30,7 +31,7 @@ MotionLayout samples overview
 |  Keyframe Cycle (3/3) | <img src="https://user-images.githubusercontent.com/796361/53616423-c5b5e700-3c25-11e9-98a4-d98351664844.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_08_cycle.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_08.xml) | 
 |  CoordinatorLayout Example (1/3) | <img src="https://user-images.githubusercontent.com/796361/53616433-cea6b880-3c25-11e9-9a56-1512385772e5.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_09_coordinatorlayout.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_09.xml) | 
 |  CoordinatorLayout Example (2/3) | <img src="https://user-images.githubusercontent.com/796361/53616441-d9f9e400-3c25-11e9-8b5b-e49cbb255850.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_10_coordinatorlayout.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_10.xml) | 
-|  CoordinatorLayout Example (3/3) | <img src="https://user-images.githubusercontent.com/796361/53616794-a029dd00-3c27-11e9-9fa9-848c1cde736b.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_11_coordinatorlayout.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_11.xml) | 
+|  CoordinatorLayout Example (3/3) | <img src="https://user-images.githubusercontent.com/796361/53616794-a029dd00-3c27-11e9-9fa9-848c1cde736b.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_11_coordinatorlayout.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_11_header.xml) | 
 |  DrawerLayout Example (1/2) | <img src="https://user-images.githubusercontent.com/796361/53616524-4d9bf100-3c26-11e9-85db-88b1450be0a3.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_12_drawerlayout.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_12_content.xml) | 
 |  DrawerLayout Example (2/2) | <img src="https://user-images.githubusercontent.com/796361/53616767-8092b480-3c27-11e9-8a25-cfba87a5dedf.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_13_drawerlayout.xml) | [Content](motionlayout/src/main/res/xml/scene_12_content.xml) <br> [Menu](motionlayout/src/main/res/xml/scene_13_menu.xml)| 
 |  Side Panel Example | <img src="https://user-images.githubusercontent.com/796361/53616774-8b4d4980-3c27-11e9-9f98-00b42a6f862d.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_14_side_panel.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_14.xml) | 
